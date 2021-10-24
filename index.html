@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooperativa Popular</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="image/favicon.svg" type="image/x-icon">
+
+</head>
+
+<body onload="loadClients()">
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-handshake"></i> CooPop </a>
+
+        <nav class="navbar">
+            <a href="#home">início</a>
+            <a href="#blogs">clientes</a>
+            <a href="#menu">serviços</a>
+            <a href="#about">sobre</a>
+            <a href="#order">contato</a>
+        </nav>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+
+    </header>
+
+    <!-- header section ends  -->
+
+    <!-- login-form  -->
+
+    <div class="login-form-container">
+
+        <form action="">
+            <h3>Login</h3>
+            <input type="email" name="" placeholder="digite seu e-mail" id="" class="box">
+            <input type="password" name="" placeholder="digite sua senha" id="" class="box">
+            <div class="remember">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">manter-me logado</label>
+            </div>
+            <input type="submit" value="Entrar" class="btn">
+            <p><a href="#">esqueci minha senha</a></p>
+            <p><a href="#">criar conta</a></p>
+        </form>
+
+    </div>
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <span><i>bem-vindo</i></span>
+            <h3>diferentes pessoas, mesmos objetivos. 😄</h3>
+            <p>Cooperativa é uma organização constituída por membros de determinado grupo econômico ou social que
+                objetiva desempenhar, em benefício comum, determinada atividade.</p>
+            <a href="#blogs" class="btn" onclick="loadClients()">Clientes</a>
+        </div>
+
+        <div class="image">
+            <img src="image/paralax.svg" alt="" class="home-parallax-img">
+            <img src="image/people.svg" alt="" class="home-img">
+        </div>
+
+    </section>
+
+    <!-- home section ends  -->
+
+    <!-- blogs section starts  -->
+
+    <section class="blogs" id="blogs">
+
+        <div class="heading">
+            <span>clientes</span>
+            <h3>últimos 5 Cadastrados</h3>
+        </div>
+
+        <div class="box-container">
+
+            <div id="carouselExampleIndicators" class="carousel carousel-dark slide carousel-fade mt-2" data-bs-interval="2000"
+                data-bs-ride="carousel">
+            
+                <div class="carousel-inner">
+            
+                    <div class="carousel-item active">
+                        <div class="row d-flex justify-content-center">
+            
+                            <div class="col-3">
+                                <div class="card myCard">
+                                    <img id="imgUsuario0" src="../imgs/favicon.ico"
+                                        class="card-img-top image-fit image-card image-card" alt="imagem cliente 1">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 id="nameUsuario0" class="card-title">Card title 1</h5>
+                                        <p id="descUsuario0" class="card-text cart-desc">Some quick example text.</p>
+                                        <a href="clientes.html" class="btn button mt-auto p-2">Mais Informações</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="col-3">
+                                <div class="card myCard">
+                                    <img id="imgUsuario1" src="../imgs/favicon.ico" class="card-img-top image-fit image-card"
+                                        alt="imagem cliente 2">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 id="nameUsuario1" class="card-title">Card title 2</h5>
+                                        <p id="descUsuario1" class="card-text cart-desc">Some quick example text.</p>
+                                        <a href="clientes.html" class="btn button mt-auto p-2">Mais Informações</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="col-3">
+                                <div class="card myCard">
+                                    <img id="imgUsuario2" src="../imgs/favicon.ico" class="card-img-top image-fit image-card"
+                                        alt="imagem cliente 3">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 id="nameUsuario2" class="card-title">Card title 3</h5>
+                                        <p id="descUsuario2" class="card-text cart-desc">Some quick example text.</p>
+                                        <a href="clientes.html" class="btn button mt-auto p-2">Mais Informações</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+            
+                    <div class="carousel-item">
+                        <div class="row d-flex justify-content-center">
+            
+                            <div class="col-3">
+                                <div class="card myCard">
+                                    <img id="imgUsuario3" src="../imgs/favicon.ico" class="card-img-top image-fit image-card"
+                                        alt="imagem cliente 4">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 id="nameUsuario3" class="card-title">Card title 4</h5>
+                                        <p id="descUsuario3" class="card-text cart-desc">Some quick example text.</p>
+                                        <a href="clientes.html" class="btn button mt-auto p-2">Mais Informações</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="col-3">
+                                <div class="card myCard">
+                                    <img id="imgUsuario4" src="../imgs/favicon.ico" class="card-img-top image-fit image-card"
+                                        alt="imagem cliente 5">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 id="nameUsuario4" class="card-title">Card title 5</h5>
+                                        <p id="descUsuario4" class="card-text cart-desc">Some quick example text.</p>
+                                        <a href="clientes.html" class="btn button mt-auto p-2">Mais Informações</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+            
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+            
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+            
+                </div>
+            </div>
+
+            <!-- <div class="box">
+                <div class="image">
+                    <img id="imgUsuario0" src="image/blog-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3 id="nameUsuario0">Cliente 1</h3>
+                    <p id="descUsuario0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, earum.</p>
+                    <a href="#" class="btnClient">ver cliente</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img id="imgUsuario1" src="image/blog-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3 id="nameUsuario1">Cliente 2</h3>
+                    <p id="descUsuario1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, earum.</p>
+                    <a href="#" class="btnClient">ver cliente</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img id="imgUsuario2" src="image/blog-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3 id="nameUsuario2">Cliente 3</h3>
+                    <p id="descUsuario2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, earum.</p>
+                    <a href="#" class="btnClient">ver cliente</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img id="imgUsuario3" src="image/blog-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3 id="nameUsuario3">Cliente 4</h3>
+                    <p id="descUsuario3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, earum.</p>
+                    <a href="#" class="btn">ver cliente</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img id="imgUsuario4" src="image/blog-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3 id="nameUsuario4">Cliente 5</h3>
+                    <p id="descUsuario4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, earum.</p>
+                    <a href="#" class="btn">ver cliente</a>
+                </div>
+            </div> -->
+
+        </div>
+
+    </section>
+
+    <!-- blogs section ends -->
+
+    <!-- menu section starts  -->
+
+    <section class="menu" id="menu">
+
+        <div class="heading">
+            <span>nossos serviços</span>
+            <h3>principais serviços disponíveis</h3>
+        </div>
+
+        <div class="box-container">
+
+            <a href="#" class="box">
+                <img src="image/menu-1.png" alt="">
+                <div class="content">
+                    <h3>jurídico</h3>
+                    <div class="price">assistência</div>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="image/menu-2.png" alt="">
+                <div class="content">
+                    <h3>sindical</h3>
+                    <div class="price">acordos</div>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="image/menu-3.png" alt="">
+                <div class="content">
+                    <h3>suporte</h3>
+                    <div class="price">Apoio</div>
+                </div>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- menu section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <div class="image">
+            <img src="image/about-img.png" alt="">
+        </div>
+
+        <div class="content">
+            <span>Por que escolher a gente?</span>
+            <h3 class="title">O que nos faz diferente!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ut explicabo, numquam iusto est a ipsum
+                assumenda tempore esse corporis?</p>
+            <a href="#" class="btn">leia mais</a>
+            <div class="icons-container">
+                <div class="icons">
+                    <img src="image/serv-1.png" alt="">
+                    <h3>experiência</h3>
+                </div>
+                <div class="icons">
+                    <img src="image/serv-2.png" alt="">
+                    <h3>Profissionalismo</h3>
+                </div>
+                <div class="icons">
+                    <img src="image/serv-3.png" alt="">
+                    <h3>alta qualidade</h3>
+                </div>
+                <div class="icons">
+                    <img src="image/serv-4.png" alt="">
+                    <h3>suporte 24/7</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- order section starts  -->
+
+    <section class="order" id="order">
+
+        <div class="heading">
+            <span>nossos contatos</span>
+            <h3>entre em contato conosco</h3>
+        </div>
+
+        <div class="icons-container">
+
+            <div class="icons">
+                <img src="image/icon-1.png" alt="">
+                <h3>8h ~ 18h</h3>
+            </div>
+
+            <div class="icons">
+                <img src="image/whats.png" alt="">
+                <h3>(21) 999-999-999</h3>
+            </div>
+
+            <div class="icons">
+                <img src="image/icon-3.png" alt="">
+                <h3>teresópolis - RJ</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- order section ends -->
+
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="newsletter">
+            <h3>novidades</h3>
+            <form action="">
+                <input type="email" name="" placeholder="digite seu e-mail" id="">
+                <input type="submit" value="increver-se">
+            </form>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Serviços</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> Jurídico</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> Sindical</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> Suporte</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> outros...</a>
+            </div>
+
+            <div class="box">
+                <h3>Navegação</h3>
+                <a href="#home"> <i class="fas fa-arrow-right"></i> início</a>
+                <a href="#blogs"> <i class="fas fa-arrow-right"></i> clientes</a>
+                <a href="#about"> <i class="fas fa-arrow-right"></i> sobre</a>
+                <a href="#menu"> <i class="fas fa-arrow-right"></i> menu</a>
+                <a href="#order"> <i class="fas fa-arrow-right"></i> order</a>
+            </div>
+
+            <div class="box">
+                <h3>atendimento escritório</h3>
+                <p>segunda-feira : 8h às 18h</p>
+                <p>terça-feira : 8h às 18h</p>
+                <p>quarta-feira : 8h às 18h</p>
+                <p>quinta-feira: 8h às 18h</p>
+                <p>sexta-feira : 8h às 18h</p>
+                <p>sábado e domingo : 10h às 15h</p>
+            </div>
+
+        </div>
+
+        <div class="bottom">
+
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-pinterest"></a>
+            </div>
+
+           
+
+        </div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
